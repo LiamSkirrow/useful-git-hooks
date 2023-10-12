@@ -1,2 +1,5 @@
 # useful-git-hooks
-Some useful git hooks to various things
+Some useful git hooks to do various things...
+
+### TODO
+- create a *prepare-commit-msg* hook to prepend the commit message with the current Jira ID. The Jira ID can be found at the beginning of the current branch (HEAD should be currently pointing to). Otherwise don't do anything and leave the commit message blank if nothing is found. The 'HEAD' file in the .git directory gives the ref (branch name) currently being pointed to, just isolate out the first letters/numbers of the br name (MM-XXXX, SW-XXXX etc...) and prepend commit message with this. This should work with arbitrarily many numbers since the Jira IDs could be any number of digits long...
